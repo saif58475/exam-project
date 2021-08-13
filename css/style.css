@@ -1,0 +1,107 @@
+body{
+    margin:0;
+}
+ /* the home section */
+
+
+
+
+ /* the about section */
+
+ .about-section{
+ text-align: center; 
+ margin-top: 25px;
+}
+.about-section h2::before{
+    content: "  ";
+    border-bottom: 0.2px solid black;
+}
+.about-section h2::after{
+    content: "A";
+    border-bottom: 3px solid black;
+    font-size: 3.5rem;
+    color:darkgrey;
+    margin-left: -70px;
+    z-index: -2;
+    opacity: 0.5;
+}
+@media screen and (min-width : 760px) {
+    .about-section h2::after{
+        content: "A";
+        border-bottom: 3px solid black;
+        font-size: 3.5rem;
+        color:darkgrey;
+        /* margin-left: 0px; */
+        z-index: -2;
+    }
+}
+
+/* the team section  */
+
+.team-section{
+    text-align: center; 
+    margin-top: 25px;
+   }
+   .team-section h2::after{
+    content: "O";
+    border-bottom: 3px solid black;
+    font-size: 4rem;
+    color:darkgrey;
+    margin-left: -100px;
+    z-index: -2;
+    opacity: 0.5;
+}
+.over-shadow{
+    background-color:tomato;
+    width: 100%;
+    height: 350px;
+    opacity: 0.3;
+    top: 5px;
+    position: absolute;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+.mem-1:hover .over-shadow{
+    visibility: visible;
+}
+.internal-list{
+    list-style-type: none;
+    display: flex;
+}
+.internal-list li{
+    margin:10px;
+}
+.internal-list li a{
+    text-decoration: none;
+    color: black;
+}
+/* the service code */
+.service-section{
+    text-align: center; 
+    margin-top: 25px;
+   }
+.service-section h2::after{
+    content: "S";
+    border-bottom: 3px solid black;
+    font-size: 4rem;
+    color:darkgrey;
+    margin-left: -80px;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+/* the footer section */
+
+.end{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    min-height: 300px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
