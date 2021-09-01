@@ -4,8 +4,6 @@ body{
  /* the home section */
 
 
-
-
  /* the about section */
 
  .about-section{
@@ -105,3 +103,87 @@ body{
     text-align: center;
     color: white;
 }
+
+
+/* the service section */
+
+.cwc h5:hover{
+    color: red;
+    cursor:pointer;
+}
+
+.client-section h2::after{
+    content: "C";
+    border-bottom: 3px solid black;
+    font-size: 4rem;
+    color:darkgrey;
+    margin-left: -110px;
+    z-index: -2;
+    opacity: 0.5;
+}
+   /* the get in touch section */
+.get-section h2::after{
+    content: "G";
+    border-bottom: 3px solid black;
+    font-size: 4rem;
+    color:darkgrey;
+    margin-left: -110px;
+    z-index: -2;
+    opacity: 0.5;
+}
+.cc:hover{
+color: red;
+}
+
+
+.contac{
+    position: absolute;
+    width: 88.5%;
+    height: 74.5%;
+    border-radius: 8px;
+    opacity: 0.5;
+    background-color: red;
+    visibility: hidden;
+}
+
+.teamlist:hover span{
+    color: red;
+    cursor: pointer;
+
+}
+.teamlist:hover .contac{
+    visibility: visible;
+
+}
+.contaclinks{
+text-decoration: none;
+}
+/* the media query for our team section */
+/* @media screen and (max-width : 400px){
+    .cc:hover{
+        color: red;
+        }
+        
+        
+        .contac{
+            position: absolute;
+            width: 94%;
+            height: 85%;
+            opacity: 0.4;
+            background-color: red;
+            border-radius: 10px;
+            visibility: hidden;
+        }
+        .teamlist:hover span{
+            color: red;
+            cursor: pointer;
+        
+        }
+        .teamlist:hover .contac{
+            visibility: visible;
+        
+        }
+        .contaclinks{
+        text-decoration: none;
+        }
+} */
